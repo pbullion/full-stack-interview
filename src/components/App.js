@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, HashRouter, Route } from 'react-router-dom';
+import HomePage from './HomePage';
 
 class App extends Component {
   render() {
