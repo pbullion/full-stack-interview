@@ -13,3 +13,6 @@ jsmn.o: jsmn.c
 
 clean:
 	rm *.o *.out
+
+
+
