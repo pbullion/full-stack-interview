@@ -1,0 +1,18 @@
+{
+  "name": "aws-batch-s3-processor",
+  "version": "0.0.1",
+  "description": "AWS Batch Job for processing S3 events",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rplute/aws-batch-s3-processeor.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.123.0"
+  }
+}
