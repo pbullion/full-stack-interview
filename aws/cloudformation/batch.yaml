@@ -58,6 +58,11 @@ Resources:
         LambdaConfigurations:
           - Function: !GetAtt LambdaFunction.Arn
             Event: 's3:ObjectCreated:*'
+            Filter:
+              S3Key:
+                Rules:
+                  - Name: 'prefix'
+                    Value: 'testing'
 
   # Lambda bucket Permission
   BucketPermission:
@@ -166,7 +171,7 @@ Resources:
           - !Ref SecurityGroup
         Type: EC2
         Subnets: !Ref Subnets
-        MinvCpus: 0
+        MinvCpus: 1
         InstanceRole: !Ref ECSInstanceProfile
         InstanceTypes:
           - m3.medium

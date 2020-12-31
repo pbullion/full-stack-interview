@@ -17,3 +17,5 @@ docker tag $DOCKER_CONTAINER:latest $REPO:latest
 
 echo "Deploying to AWS ECR"
 docker push $REPO
+
+
